@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body> 
+     <!-- Navigation Bar -->
+     <header>
+        <div class="menu">My Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+
+    <!-- Main Content (Initially Hidden) -->
+    <div id="main-content">
+        <!-- Typing Animation -->
+    <div id="typing-container">
+        <h1 id="ani"></h1>
+    </div>
+      
+       <!-- Home Section -->
+        <section id="home">
+            <!-- Content appears after animation -->
+             <div id="home-content" class="content" style="display: none;">
+                <h1 class="description">
+                    SHAIK DARIYABHI<br>
+                   <p><i>
+                    Enthustatic second-year student graduating in 2027,
+                    eager to contribute to a dynamic organization where I
+                    can apply my skills to trackle challenging tasks and advance 
+                    my professional career with a solid foundation. 
+                   </i></p>
+                </h1>
+                <img src="pic1.png" alt="My Profile" class="profile-img">
+            </div>
+     </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div id="skill-content" class="skill-container">
+            <h1>My Skills</h1>
+              <div class="frontend-skills">
+                    <h2>Frontend Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="language-skills">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="project-list">
+                <div class="project-item" onclick="openProject('https://dariyabhishaik.github.io/calculator/')">Calculator</div>
+                <div class="project-item" onclick="openProject('https://dariyabhishaik.github.io/stopwatch/')">Stop Watch</div>
+                <div class="project-item" onclick="openProject('https://dariyabhishaik.github.io/dices/')">Dices</div>
+                <div class="project-item" onclick="openProject('https://dariyabhishaik.github.io/rockpaper/')">Rock Paper Scissors</div>
+                <div class="project-item" onclick="openProject('https://dariyabhishaik.github.io/temperatures/')">Temperature Conversion</div>
+                <div class="project-item" onclick="openProject('https://dariyabhishaik.github.io/clock/')">Clock</div>
+                
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements">
+            <h1>My Achievements</h1>
+            <div class="certificate-list">
+                <img src="python.jpg" alt="Certificate 1">
+                 <img src="teasurehunt.jpg" alt="Certificate 2">
+                 <img src="cyberseurityevent.jpg" alt="Certificate 3">
+                <!-- <img src="certificate3.jpg" alt="Certificate 3"> -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <div class="social-links">
+                <a href="https://github.com/Dariyabhishaik" target="_blank">Github<i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/Shaik Dariyabhi" target="_blank">Linkedin<i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/shaik_dariyabhi" target="_blank">Instagram<i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
